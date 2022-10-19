@@ -281,7 +281,7 @@ if __name__ == "__main__":
     num_cpus = 0 if use_gpu else 1
 
     # each file is 2GBs
-    stream_window_size = 2 * 1024 * 1024 * 1024
+    stream_window_size = 2 * 1024 * 1024 * 1024 * 4
 
     trainer = TorchTrainer(
         train_func,
